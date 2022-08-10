@@ -1,0 +1,53 @@
+<body ng-controller="myCtrl">
+    <div class="row justify-content-center pt-5">
+        <div class="col-6">
+            <p class="sub-title mb-1">
+                About Me
+            </p>
+            <div class="row">
+                <div class="col">
+                    <p class="body mb-0">
+                        Moshi moshi! My name is Angela Kalogeras. I am a junior software developer and amateur Korean
+                        chef
+                        hailing from Acton, CA.
+                    </p>
+                    <p class="ml-5 body">
+                        -Born 1996
+                    </p>
+                    <p class="body1">
+                        <i> "Any female born after 1993 can't cook...all they know is McDonald's, charge they phone,
+                            twerk, be bisexual, eat hot chip and lie."</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row parentclass justify-content-center mb-5 pb-5">
+        <div class="col">
+            <h1 class="portfolio-font  text-center">RECIPES</h1>
+            <div class="text-center mt-0 p-0 childclass firstchild">
+                <p class="portfolio-font2">My Recipes</p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5 pt-5">
+        <div class="col-11 options-box p-0">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 text-center pt-4">
+                    <h1>Filter Recipes:&nbsp</h1>
+                    <input class="mb-4" type="text" ng-model="recipes.query" />
+                    <ul class="list-inline">
+                        <li class="list-inline-item" ng-repeat="clickedRecipe in recipes | filter:recipes.query">
+                            <a href="#!recipe-template">
+                                <div class="col-lg-4 col-md-6 col-sm-12 border-shadow mr-3 p-0">
+                                    <img ng-click="onSelect(clickedRecipe)" ng-src="{{ clickedRecipe.image}}" />
+                                </div>
+                                <h3 class="recipes py-3" ng-click="onSelect(clickedRecipe)">{{clickedRecipe.label}}</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

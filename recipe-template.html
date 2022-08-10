@@ -1,0 +1,71 @@
+<body ng-controller="myCtrl">
+    <div class="container-fluid">
+      <div ng-show="selectedRecipe.description === undefined">
+          <div class="row justify-content-center">
+              <div class="col text-center">
+                  <h1>{{selectedRecipe.label}}</h1>
+              </div>
+          </div>
+          <div class="row pb-5">
+              <div class="col text-center">
+                  <img ng-src="{{selectedRecipe.image}}" />
+              </div>
+          </div>
+          <div class="row mt-5 justify-content-center">
+              <div class="col-lg-3 mb-4">
+                  <table class="table-bordered table-hover text-center">
+                      <thead>
+                          <tr>
+                              <th>Quantity</th>
+                              <th>Measurements</th>
+                              <th>Ingredients</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="ing in selectedRecipe.ingredients">
+                          <td>{{ ing.quantity }}</td>
+                          <td>{{ ing.measure }}</td>
+                          <td>{{ ing.text }}</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="div" ng-show="selectedRecipe.description !== undefined">
+          <div class="row justify-content-center">
+              <div class="col text-center">
+                  <h1>{{selectedRecipe.label}}</h1>
+              </div>
+          </div>
+          <div class="row pb-5">
+              <div class="col text-center">
+                  <img ng-src="{{selectedRecipe.image}}" />
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-lg-3 mb-4">
+                  <table class="table-bordered table-hover text-center">
+                      <thead>
+                          <tr>
+                              <th>Quantity</th>
+                              <th>Ingredients</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr ng-repeat="ing in selectedRecipe.ingredients">
+                              <td>{{ ing.quantity }}</td>
+                              <td>{{ ing.ingredient }}</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="col-lg-3 mb-4">
+                  <ul ng-repeat="method in selectedRecipe.method">
+                      <li>{{method}}</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
