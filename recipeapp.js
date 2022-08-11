@@ -8,7 +8,7 @@ app.config(function ($routeProvider) {
         .when("/landing", {
             templateUrl: "landing.html",
         })
-        .when("/page-template", {
+        .when("/recipe-template", {
             templateUrl: "recipe-template.html",
         })
         .when("/contact", {
@@ -50,36 +50,28 @@ const sujebi = {
     label: "Sujebi",
 
     ingredients: [
-        { quantity: "8 cups", ingredient: "water" },
-        { quantity: "4 tbsp", ingredient: "chicken bouillon" },
+        { quantity: "8 3/4 cups", ingredient: "water" },
+        { quantity: "4-5 tbsp", ingredient: "chicken bouillon" },
         { quantity: "1", ingredient: "medium onion" },
-        { quantity: "1 Tbsp", ingredient: "Honey" },
-        { quantity: "1 Tbsp", ingredient: "Apple cider Vinegar" },
-        { quantity: "2 Tbsp", ingredient: "Chili Powder" },
-        { quantity: "2 tsp", ingredient: "Ground Cumin" },
-        { quantity: "1 tsp", ingredient: "Paprika" },
-        { quantity: "1 tsp", ingredient: "Crushed Red Pepper Flakes" },
-        { quantity: "to taste", ingredient: "Salt and Pepper" },
-        { quantity: "1/2 cup", ingredient: "Mild Guac" },
-        { quantity: "1/2 cup", ingredient: "Sour Cream" },
-        { quantity: "1/2 cup", ingredient: "Shredded Colby Jack Cheese" },
-        { quantity: "4", ingredient: "Tortillas" }
+        { quantity: "2 cups", ingredient: "flour" },
+        { quantity: "3 cups", ingredient: "chopped kimchi" },
+        { quantity: "1/4 cup", ingredient: "kimchi juice" },
+        { quantity: "1 tsp", ingredient: "salt" },
+        { quantity: "2 tbsp", ingredient: "red pepper flakes" },
+        { quantity: "2", ingredient: "stalks green onions" }
     ],
 
-    description: " I make this dish when I know I am going to be low on time during the week after work. It is quick and easy to prep on the weekend. Having to prepare meals for someone who is vegetarian makes deciding what to do for dinner a little harder.",
+    description: " Sujebi is a spicy soup great for during the winter months or when you're sick.",
     image: "images/sujebiimg.jpg",
 
     method: [
-        "Freezer Meal Preperation",
-        "Chop onion to desired size",
-        "Drain and rinse black beans",
-        "Add Black beans and onion to large freezer safe bag",
-        "Mix spices together with the black beans and onion",
-        "Flatten and store in the freezer",
-        "Cooking Directions",
-        "Defrost in fridge over night",
-        "Place in slow cooker and cook on low for 8 hours",
-        "Serve on tortillas and top with Guac, Sour Cream, and Cheese",
+        "Bring 8 cups of water to a boil in pot.",
+        "Combine the flour, salt, and 3/4 cup of water in a mixing bowl and mix thoroughly. Chill dough in fridge until ready to use.",
+        "Cut 2 onion and green onion stalks into 1 inch pieces.",
+        "Once water is boiling, add the chicken bouillon, onion, kimchi, and kimchi juice. Let cook for 10 mins or until soup is starting to bubble.",
+        "Tear off dough in pieces and flatten into 1 inch size pieces and drop into soup. Continue until all the dough is used. Add in the green onions.",
+        "Let soup simmer for another 10 minutes.",
+        "Serve while hot!"
     ],
 };
 const kimchiRice = {
@@ -87,13 +79,12 @@ const kimchiRice = {
     label: "Kimchi Fried Rice",
 
     ingredients: [
-        { quantity: "2", ingredient: "frozen deok" },
-        { quantity: "1/3 cup", ingredient: "gochujang paste" },
-        { quantity: "3 tbsp", ingredient: "red pepper flakes" },
-        { quantity: "1 tbsp", ingredient: "brown sugar" },
-        { quantity: "3 tbsp", ingredient: "chicken bouillon" },
-        { quantity: "4 cups", ingredient: "water" },
-        { quantity: "4", ingredient: "stalks green onions" },
+        { quantity: "3 cups", ingredient: "day-old cooked jasmine rice" },
+        { quantity: "3 cups", ingredient: "kimchi" },
+        { quantity: "3 tbsp", ingredient: "kimchi juice" },
+        { quantity: "1 tbsp", ingredient: "chicken bouillon" },
+        { quantity: "2 tbsp", ingredient: "butter" },
+        { quantity: "1 can", ingredient: "spam" },
         { quantity: "4", ingredient: "hardboiled eggs" },
         { quantity: "2", ingredient: "sheets of fishcake (optional)" }
     ],
@@ -291,11 +282,11 @@ const jajamyeon = {
 
 app.controller('myCtrl', function ($scope) {
 
-            $scope.recipes = [];
+    $scope.recipes = [];
 
-            $scope.recipes.push(tteokbokki, sujebi, kimchiRice, soldierStew, kimchiJjigae, japchae, bibimbap, coldNoodle, jajamyeon);
+    $scope.recipes.push(tteokbokki, sujebi, kimchiRice, soldierStew, kimchiJjigae, japchae, bibimbap, coldNoodle, jajamyeon);
 
-        $scope.onSelect = function (clickedRecipe) {
-            $scope.selectedRecipe = clickedRecipe;
-        };
+    $scope.onSelect = function (clickedRecipe) {
+        $scope.selectedRecipe = clickedRecipe;
+    };
 });

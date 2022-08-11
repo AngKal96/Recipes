@@ -88,7 +88,7 @@ button:hover {
     color: rgb(40, 46, 82);
 }
 
-.testimonials-section-title {
+.testimonials-section-title, .recipe-title {
     font-family: 'Permanent Marker', cursive;
     font-size: 65px;
     color: rgba(100, 56, 14, 0.61);
@@ -302,6 +302,15 @@ li {
     box-shadow: 3px 3px 8px rgba(27, 34, 100, 0.432);
 }
 
+.recipe-table-headers {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 30px;
+}
+
 .options-box a {
     color: rgba(74, 77, 85, 0.829);
+}
+
+ol li {
+    list-style-type: disc;
 }
