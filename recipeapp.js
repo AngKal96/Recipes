@@ -85,20 +85,20 @@ const kimchiRice = {
         { quantity: "1 tbsp", ingredient: "chicken bouillon" },
         { quantity: "2 tbsp", ingredient: "butter" },
         { quantity: "1 can", ingredient: "spam" },
-        { quantity: "4", ingredient: "hardboiled eggs" },
-        { quantity: "2", ingredient: "sheets of fishcake (optional)" }
+        { quantity: "1 tsp", ingredient: "sesame oil" },
+        { quantity: "2", ingredient: "stalks green onions" },
+        { quantity: "1", ingredient: "egg" }
     ],
-    description: "Tteokbokki, or simmered rice cake, is a popular Korean food made from small-sized garae-tteok called tteokmyeon, cooked in a spicy thick sauce.",
+    description: "Need a use for some old rice, well look no further. Kimchi fried rice is best made with day-old rice.",
 
     image: "images/tteokbokkiimg.jpg",
     method: [
-        "Bring water to a boil in saucepan on med-high heat.",
-        "While water is heating, in a separate bowl mix the gocujang, red pepper flakes, and brown sugar. Cut 2 green onion stalks into 1 inch sections.",
-        "Once water is boiling, add the gochujang mixture in the saucepan until fully incorporated.",
-        "Add in the defrosted deok and green onions and stir.",
-        "Leave saucepan uncovered and lower heat to med-low. Stir occassionally. Let simmer for 25 minutes.",
-        "(Optional) Cut fishcake sheets into squares and add into saucepan 10 minutes before it is done.",
-        "Transfer to a serving dish and top with minced green onions. Serve while hot!"
+        "Slice spam into cubes and cook fully in a large pan over medium heat.",
+        "Add in the cut up kimchi and butter in the pan with the spam and cook another for 3-4 minutes.",
+        "Add in the rice and stir until incorporated and cook for 2-3 mins.",
+        "Add in the kimchi juice and chicken bouillon. Sitr.",
+        "Leave pan uncovered and let cook for another 10 minutes on medium heat or until bottom is crispy.",
+        "Transfer to a bowl and top with a sunny-side-up egg, minced green onion, and drizzle with sesame oil."
     ],
 
 };
@@ -106,15 +106,15 @@ const kimchiRice = {
 const soldierStew = {
     label: "Soldier's Stew",
     ingredients: [
-        { quantity: "2 1/4 cups", ingredient: "All-purpose flour" },
-        { quantity: "1 teaspoon", ingredient: "Baking soda" },
-        { quantity: "Sprinkled", ingredient: "Fine salt" },
-        { quantity: "1 1/2 sticks (12 tablespoons)", ingredient: "Unsalted butter, at room temperature" },
-        { quantity: "3/4 cup", ingredient: "Light brown sugar" },
-        { quantity: "2/3 cup", ingredient: "Granulated sugar" },
-        { quantity: "2", ingredient: "Large eggs" },
-        { quantity: "1 teaspoon", ingredient: "Pure vanilla extract" },
-        { quantity: "1 12-ounce", ingredient: "A bag of semisweet chocolate chips" },
+        { quantity: "8 3/4 cups", ingredient: "water" },
+        { quantity: "4-5 tbsp", ingredient: "chicken bouillon" },
+        { quantity: "1", ingredient: "medium onion" },
+        { quantity: "2 cups", ingredient: "flour" },
+        { quantity: "3 cups", ingredient: "chopped kimchi" },
+        { quantity: "1/4 cup", ingredient: "kimchi juice" },
+        { quantity: "1 tsp", ingredient: "salt" },
+        { quantity: "2 tbsp", ingredient: "red pepper flakes" },
+        { quantity: "2", ingredient: "stalks green onions" }
     ],
     description: "The combination of the toasted grain with the browned butter, caramelized sugar, vanilla and chocolate are “the beautiful rich flavors that blend together in a chocolate chip cookie,” And as the chocolate melts, it becomes more aromatic and punches up the flavor.",
     image: "images/soldiersstewimg.jpg",
